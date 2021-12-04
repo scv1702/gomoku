@@ -1,5 +1,5 @@
-gomoku: gomoku.c
-	gcc gomoku.c -o gomoku -Wall
+main: main.c gomoku.c
+	gcc main.c gomoku.c -lcurses -o main
 
 clean:
-	rm gomoku
+	rm main
