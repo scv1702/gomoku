@@ -1,21 +1,9 @@
 #include "gomoku.h"
 
 int main() {
-  /*
   print_logo();
 
-  signal(SIGINT, give_up);
-  signal(SIGALRM, time_out);
-
-  alarm(30);
-
-  play_gomoku();
-
   end_gomoku();
-  */
-
-  print_gomoku();
-  
   return 0;
 }
 
@@ -52,27 +40,4 @@ void print_logo() {
         break;
     }
   }
-}
-
-void give_up() {
-  int option;
-
-  alarm(0);
-  puts("Do you really want to give up this game?");
-  puts("1) yes");
-  puts("2) no");
-  printf(": ");
-  scanf("%d", &option);
-
-  if (option) {
-    end_gomoku();
-  } else {
-
-  }
-}
-
-void time_out() {
-  puts("30 seconds have passed. Time out!");
-  end_gomoku();
-  exit(0);
 }
