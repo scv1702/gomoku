@@ -27,16 +27,19 @@ void play_gomoku() {
 }
 
 void print_scoreboard() {
-  struct score score_line;
   FILE *scoreboard_fp;
+  char player_1[4];
+  char player_2[4];
+  char winner[4];
   int index;
+  time_t t;
 
   index = 0;
   scoreboard_fp = fopen("scoreboard", "r");
 
-  printf("Index    Player 1    Player 2    Winner    Time");
-  while (fscanf(scoreboard_fp, "%s %s %s %ld", score_line.player_1, score_line.player_2, score_line.winner, &score_line.time) != EOF) {
-    printf("%d       %s          %s          %s", index++, score_line.player_1, score_line.player_2, score_line.winner);
+  printf("Index    Player 1    Player 2    Winner    Time\n");
+  while (fscanf(scoreboard_fp, "%s %s %s %ld", player_1, player_2, winner, &t) != EOF) {
+    printf("%d        %s         %s         %s       %s\n", index++, player_1, player_2, winner, ctime(&t));
   }
 
   exit(0);
@@ -49,9 +52,9 @@ void end_gomoku(int player) {
   signal(SIGALRM, SIG_IGN);
 
   printf("Player %d is winner!\n", player);
-  puts("-----------------------------------------------");
+  puts("------------------------------------------------");
   puts("| GAME OVER! Input your name within 3 letters. |");
-  puts("-----------------------------------------------");
+  puts("------------------------------------------------");
 
   printf("Player 1: ");
   scanf("%s", player_1);
