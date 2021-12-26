@@ -1,5 +1,4 @@
 #include "gomoku.h"
-#include <pthread.h>
 
 // initialize the game
 void init_game() {
@@ -164,6 +163,10 @@ void placement() {
 
     scanf("%c%d", &col, &row);
     getchar();
+
+    if (row < 0 || row > 18) {
+      continue;
+    }
   
     col = toupper(col);
     col -= 'A';
