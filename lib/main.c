@@ -38,10 +38,12 @@ int main() {
         break;
       case 3:
         system("clear");
-        puts("Players alternate turns placing a stone of their color on an empty intersection.");
-        puts("Black plays first.");
-        puts("The winner is the first player to form an unbroken chain of five stones horizontally, vertically, or diagonally.");
-        puts("If the player does nothing for 30 seconds, the player will lose.");
+        puts("How to play the gomoku?");
+        puts("- Players alternate turns placing a stone of their color on an empty intersection.");
+        Puts("- The color of the stone is black or white.");
+        puts("- Black plays first.");
+        puts("- The winner is the first player to form an unbroken chain of five stones horizontally, vertically, or diagonally.");
+        puts("- If the player does nothing for 30 seconds, the player will lose.");
         break;
       case 4:
         exit(0);
