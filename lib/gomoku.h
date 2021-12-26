@@ -6,6 +6,7 @@
 #include <ctype.h>
 #include <time.h>
 #include <string.h>
+#include <sys/wait.h>
 
 #define BLACK 1
 #define WHITE 2
