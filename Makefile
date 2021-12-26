@@ -1,5 +1,5 @@
-main: main.c gomoku.c
-	gcc main.c gomoku.c -lcurses -o main
+gomoku: ./lib/main.c ./lib/gomoku.c
+	gcc ./lib/main.c ./lib/gomoku.c -lpthread -o ./bin/gomoku
 
 clean:
-	rm main
+	rm ./bin/gomoku
