@@ -1,3 +1,9 @@
+/* file name: gomoku.c
+ * author: 2020111854_Shin Chan-Gyu
+ * datetime: 2021-12-27 21:18
+ * description: library source code for the project
+ */
+
 #include "gomoku.h"
 
 // initialize the game

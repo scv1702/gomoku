@@ -1,3 +1,10 @@
+/* file name: gomoku.c
+ * author: 2020111854_Shin Chan-Gyu
+ * datetime: 2021-12-27 21:19
+ * description: main source code for the gomoku 
+ */
+
+
 #include "gomoku.h"
 
 int main() {

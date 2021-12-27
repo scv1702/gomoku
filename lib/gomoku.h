@@ -1,3 +1,9 @@
+/* file name: gomoku.h
+ * author: 2020111854_Shin Chan-Gyu
+ * datetime: 2021-12-27 21:20
+ * description: library header for the project
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
