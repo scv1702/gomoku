@@ -1,6 +1,6 @@
 # gomoku
 ![License](https://img.shields.io/badge/Licence-MIT-blue.svg)<br>
-This is the console-based gomoku game that two users can enjoy. written in ``C``.
+This is the console-based gomoku game that two users can enjoy.
 
 ## What is the gomoku?
 > Gomoku, also called Five in a Row, is an abstract strategy board game. 
