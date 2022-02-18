@@ -33,7 +33,7 @@ cd gomoku
 ```
 
 ## Demo Video
-https://www.youtube.com/watch?v=RY8XYRMKVxY
+[Final presentation](https://www.youtube.com/watch?v=RY8XYRMKVxY)
 
 ## Contact
 You can contact me via e-mail (scv1702 at gmail.com).
